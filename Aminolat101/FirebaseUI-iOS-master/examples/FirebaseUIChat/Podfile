@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+
+pod 'FirebaseUI', :path => "../../FirebaseUI.podspec"
+
+target 'FirebaseUIChat' do
+end
+

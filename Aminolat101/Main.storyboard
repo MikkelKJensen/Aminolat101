@@ -24,6 +24,14 @@
                                     <navigationItem title="Aminolat" id="6mE-fq-m9D"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-G1-alO">
+                                <rect key="frame" x="80" y="203" width="60" height="30"/>
+                                <state key="normal" title="Sign Out"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0J7-nG-4nl" customClass="GIDSignInButton">
+                                <rect key="frame" x="29" y="256" width="240" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

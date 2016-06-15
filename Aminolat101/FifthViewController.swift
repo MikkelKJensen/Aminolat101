@@ -7,21 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 
-class FifthViewController: UIViewController {
+class GoogleSignInViewController: UIViewController, GIDSignInUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-
-      
+        
+        GIDSignIn.sharedInstance().uiDelegate = GIDSignIn.sharedInstance().uiDelegate
+        
+        // Uncomment to automatically sign in the user.
+        GIDSignIn.sharedInstance().signInSilently()
+        
+        // TODO(developer) Configure the sign-in button look/feel
+        // ...
+    }
+        class GoogleSignInViewController: UIViewController, GIDSignInUIDelegate {
+            // ...
+            
+        }
       
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func didReceiveMemoryWarning() {
+        didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
@@ -36,4 +47,4 @@ class FifthViewController: UIViewController {
     }
     */
 
-}
+

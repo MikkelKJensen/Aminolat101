@@ -55,7 +55,7 @@ class ViewController: UIViewController, UISearchControllerDelegate, UISearchResu
 
 
   //Changing Status Bar
-  func preferredStatusBarStyle() -> UIStatusBarStyle {
+   func preferredStatusBarStyle() -> UIStatusBarStyle {
     
     //LightContent
     return UIStatusBarStyle.LightContent
