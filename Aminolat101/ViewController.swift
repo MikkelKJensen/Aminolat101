@@ -8,6 +8,7 @@
 
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
   
@@ -53,7 +54,7 @@ class ViewController: UIViewController, UISearchControllerDelegate, UISearchResu
 }
 
 
-
+/*
   //Changing Status Bar
    func preferredStatusBarStyle() -> UIStatusBarStyle {
     
@@ -64,4 +65,4 @@ class ViewController: UIViewController, UISearchControllerDelegate, UISearchResu
     //return UIStatusBarStyle.Default
     
   }
-  
+*/  

@@ -15,14 +15,15 @@ class GoogleSignInViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GIDSignIn.sharedInstance().uiDelegate = GIDSignIn.sharedInstance().uiDelegate
+        GIDSignIn.sharedInstance().uiDelegate = self
         
         // Uncomment to automatically sign in the user.
-        GIDSignIn.sharedInstance().signInSilently()
+        //GIDSignIn.sharedInstance().signInSilently()
         
         // TODO(developer) Configure the sign-in button look/feel
         // ...
     }
+    
         class GoogleSignInViewController: UIViewController, GIDSignInUIDelegate {
             // ...
             

@@ -9,7 +9,7 @@
         <!--Profile-->
         <scene sceneID="ghT-jG-Cjo">
             <objects>
-                <viewController id="a6o-3D-iln" sceneMemberID="viewController">
+                <viewController id="a6o-3D-iln" customClass="GoogleSignInViewController" customModule="Aminolat101" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4IO-cc-q5S"/>
                         <viewControllerLayoutGuide type="bottom" id="qO8-gk-NEq"/>
@@ -25,20 +25,47 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-G1-alO">
-                                <rect key="frame" x="80" y="203" width="60" height="30"/>
+                                <rect key="frame" x="80" y="107" width="60" height="30"/>
                                 <state key="normal" title="Sign Out"/>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0J7-nG-4nl" customClass="GIDSignInButton">
-                                <rect key="frame" x="29" y="256" width="240" height="88"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0J7-nG-4nl" userLabel="SignInButton" customClass="GIDSignInButton">
+                                <rect key="frame" x="29" y="160" width="240" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-BP-FWY">
+                                <rect key="frame" x="20" y="286" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyu-cd-lNx">
+                                <rect key="frame" x="20" y="324" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-F5-QRL">
+                                <rect key="frame" x="238" y="362" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="0ju-nw-HWh"/>
+                                    <constraint firstAttribute="height" constant="30" id="SFj-RL-H8j"/>
+                                </constraints>
+                                <state key="normal" title="Login/Create User"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="c5T-F5-QRL" firstAttribute="top" secondItem="lyu-cd-lNx" secondAttribute="bottom" constant="8" id="60r-29-TZb"/>
+                            <constraint firstItem="lyu-cd-lNx" firstAttribute="centerY" secondItem="3Tc-n6-lSu" secondAttribute="centerY" constant="39" id="8i6-Ax-plH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q6b-BP-FWY" secondAttribute="trailing" id="DAY-Bj-XHB"/>
+                            <constraint firstItem="c5T-F5-QRL" firstAttribute="centerX" secondItem="lyu-cd-lNx" secondAttribute="centerX" constant="0.5" id="GHW-Rv-VrH"/>
                             <constraint firstItem="L9m-UL-i3r" firstAttribute="leading" secondItem="3Tc-n6-lSu" secondAttribute="leadingMargin" constant="-20" id="HRw-ga-hFg"/>
                             <constraint firstItem="L9m-UL-i3r" firstAttribute="centerX" secondItem="3Tc-n6-lSu" secondAttribute="centerX" id="Mrm-ka-WC2"/>
+                            <constraint firstItem="lyu-cd-lNx" firstAttribute="leading" secondItem="3Tc-n6-lSu" secondAttribute="leadingMargin" id="Qh2-c2-LSQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L9m-UL-i3r" secondAttribute="trailing" constant="-20" id="Syr-Py-age"/>
+                            <constraint firstItem="lyu-cd-lNx" firstAttribute="top" secondItem="Q6b-BP-FWY" secondAttribute="bottom" constant="8" id="VMo-Cw-txx"/>
                             <constraint firstItem="L9m-UL-i3r" firstAttribute="top" secondItem="4IO-cc-q5S" secondAttribute="bottom" id="WAv-et-9ph"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lyu-cd-lNx" secondAttribute="trailing" id="YaG-a7-AGk"/>
+                            <constraint firstItem="Q6b-BP-FWY" firstAttribute="leading" secondItem="3Tc-n6-lSu" secondAttribute="leadingMargin" id="Ye9-GW-Gjx"/>
+                            <constraint firstItem="lyu-cd-lNx" firstAttribute="centerX" secondItem="3Tc-n6-lSu" secondAttribute="centerX" id="xkA-e0-amo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="my profile icon" id="zLp-Zg-I4Z"/>

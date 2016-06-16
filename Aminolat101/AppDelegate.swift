@@ -12,12 +12,13 @@ import UIKit
 import Firebase
 
 @UIApplicationMain
-class App01Delegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         FIRApp.configure()
         
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
@@ -33,6 +34,7 @@ class App01Delegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 return
             }
             // ...
+            print("Sorry!")
     }
     
     func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
@@ -48,9 +50,9 @@ class App01Delegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
     }
     func application(application: UIApplication,
-        openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
             var options: [String: AnyObject] = [UIApplicationOpenURLOptionsSourceApplicationKey: sourceApplication!,
-                UIApplicationOpenURLOptionsAnnotationKey: annotation!]
+                UIApplicationOpenURLOptionsAnnotationKey: annotation]
             return GIDSignIn.sharedInstance().handleURL(url,
                 sourceApplication: sourceApplication,
                 annotation: annotation)
