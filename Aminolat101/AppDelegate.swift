@@ -10,54 +10,91 @@
 
 import UIKit
 import Firebase
+import FBSDKCoreKit
+import FBSDKLoginKit
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate { //GIDSignInDelegate
     
-    
+
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        
         FIRApp.configure()
         
-        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
+/*
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.makeKeyAndVisible()
         
-    
+        let feedController = UICollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        
+        let navigationController = UINavigationController(rootViewController: feedController)
+        window?.rootViewController = navigationController
+
+*/
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+//        GIDSignIn.sharedInstance().delegate = self
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         return true
-    }
-    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
-        withError error: NSError!) {
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            // ...
-            print("Sorry!")
+       
     }
     
-    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
-        withError error: NSError!) {
+    
+    
+//    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+//        withError error: NSError!) {
+//            if let error = error {
+//                print(error.localizedDescription)
+//                return
+//            }
+            // ...
+//            print("Sorry!")
+    }
+    
+//    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+//        withError error: NSError!) {
             // Perform any operations when the user disconnects from app here.
             // ...
-    }
- 
+//    }
+/*
     func application(application: UIApplication,
         openURL url: NSURL, options: [String: AnyObject]) -> Bool {
             return GIDSignIn.sharedInstance().handleURL(url,
                 sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
                 annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
+        }
+*/
+            
+
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        var handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+        // Add any custom logic here.
+        return handled
+            
+            //var options: [String: AnyObject] = [UIApplicationOpenURLOptionsSourceApplicationKey: sourceApplication!,
+                //UIApplicationOpenURLOptionsAnnotationKey: annotation]
+            //return GIDSignIn.sharedInstance().handleURL(url,
+                //sourceApplication: sourceApplication,
+                //annotation: annotation)
     }
-    func application(application: UIApplication,
-        openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-            var options: [String: AnyObject] = [UIApplicationOpenURLOptionsSourceApplicationKey: sourceApplication!,
-                UIApplicationOpenURLOptionsAnnotationKey: annotation]
-            return GIDSignIn.sharedInstance().handleURL(url,
-                sourceApplication: sourceApplication,
-                annotation: annotation)
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
-}
+    func applicationFacebook(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+
+
 
 
 

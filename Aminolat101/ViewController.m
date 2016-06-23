@@ -7,62 +7,80 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 @import Firebase;
 @import FirebaseAuth;
 @import GoogleSignIn;
 
 
 
-@interface ViewController ()
 
-@end
+
+
+
+// @interface ViewController ()
+
+// @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+
+    - (void)viewDidLoad {
+        [super viewDidLoad];
+        FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+        loginButton.center = self.view.center;
+        [self.view addSubview:loginButton];
+        // Optional: Place the button in the center of your view.
+//        loginButton.center = self.view.center;
+//        [self.view addSubview:loginButton];
+    }
+    
+    @end
+    
+//    [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
-    [GIDSignIn sharedInstance].delegate = self;
-    [GIDSignIn sharedInstance].uiDelegate = self;
+//    [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
+//    [GIDSignIn sharedInstance].delegate = self;
+//    [GIDSignIn sharedInstance].uiDelegate = self;
     
-}
+//}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+//    - (void)didReceiveMemoryWarning {
+//    [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+// }
 
 
--(void)signIn:(GIDSignIn *) signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
+// -(void)signIn:(GIDSignIn *) signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
     
-    if (user) {
-        NSString * welcomeMessage = [NSString stringWithFormat: @"Welcome To FireBase, %@"];
-        UIAlertView *alert = [[UIAlertView alloc]
-                              initWithTitle:@"Firebase" message:welcomeMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    } else {
+//    if (user) {
+//        NSString * welcomeMessage = [NSString stringWithFormat: @"Welcome To FireBase, %@"];
+//        UIAlertView *alert = [[UIAlertView alloc]
+//                              initWithTitle:@"Firebase" message:welcomeMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//    } else {
         
-        NSLog(@"%@", error.localizedDescription);
-    }
+//        NSLog(@"%@", error.localizedDescription);
+//    }
     
-    }
+//    }
     
--(IBAction)SignOutClicked:(id)sender {
+// -(IBAction)SignOutClicked:(id)sender {
     
-    FIRAuth *firebaseAuth = [FIRAuth auth];
-    NSError * signOutError;
-    BOOL status = [firebaseAuth signOut:&signOutError];
-    if (!status) {
-        NSLog(@"Error Signing Out: %@", signOutError);
-        return;
-    }
+//    FIRAuth *firebaseAuth = [FIRAuth auth];
+//    NSError * signOutError;
+//    BOOL status = [firebaseAuth signOut:&signOutError];
+//    if (!status) {
+//        NSLog(@"Error Signing Out: %@", signOutError);
+//        return;
+//    }
     
 //    _signInButton.enabled = true;
 //    _signOutButton.enabled = false;
 
-}
+// }
 
 
-@end
+// @end
