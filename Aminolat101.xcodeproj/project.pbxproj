@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6712A06BDBC66B75606DB03B /* Pods_Aminolat101.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C9F18106625BC8ADC514E9 /* Pods_Aminolat101.framework */; };
+		CD0655091D101D1800691A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0655081D101D1800691A9B /* AppDelegate.swift */; };
+		CD06550B1D101D1800691A9B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06550A1D101D1800691A9B /* FirstViewController.swift */; };
+		CD06550D1D101D1800691A9B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06550C1D101D1800691A9B /* SecondViewController.swift */; };
+		CD0655121D101D1800691A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0655111D101D1800691A9B /* Assets.xcassets */; };
+		CD0655151D101D1800691A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0655131D101D1800691A9B /* LaunchScreen.storyboard */; };
+		CD269D671D141C5E008B9759 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD269D661D141C5E008B9759 /* FBSDKCoreKit.framework */; };
+		CD269D691D141C70008B9759 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD269D681D141C70008B9759 /* FBSDKLoginKit.framework */; };
+		CD269D6B1D141C80008B9759 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD269D6A1D141C80008B9759 /* FBSDKShareKit.framework */; };
+		CD427E741D1721650015E303 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD427E731D1721650015E303 /* SignUpViewController.swift */; };
+		CD427E7C1D18490D0015E303 /* FacebookSDKs-iOS-4.13.1 in Resources */ = {isa = PBXBuildFile; fileRef = CD427E7B1D18490D0015E303 /* FacebookSDKs-iOS-4.13.1 */; };
+		CD427E7E1D18682B0015E303 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD427E7D1D18682B0015E303 /* FBSDKLoginKit.framework */; };
+		CD543EBE1D16F2C600561FD7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD543EBD1D16F2C600561FD7 /* LogInViewController.swift */; };
+		CD7A4E931D109FC1001E81C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD7A4E921D109FC1001E81C2 /* GoogleService-Info.plist */; };
+		CD97A2D11D11B249001EFF88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD97A2D01D11B249001EFF88 /* AppDelegate.m */; };
+		CD97A2D31D11B272001EFF88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD97A2D21D11B272001EFF88 /* ViewController.m */; };
+		CD9A20201D10432C00000D76 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD9A201F1D10432C00000D76 /* Photos.plist */; };
+		CD9A20221D10444A00000D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9A20211D10444A00000D76 /* Images.xcassets */; };
+		CD9A20241D104A0400000D76 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20231D104A0400000D76 /* Photo.swift */; };
+		CD9A20261D104A1900000D76 /* AnnotatedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20251D104A1900000D76 /* AnnotatedPhotoCell.swift */; };
+		CD9A20281D104A4B00000D76 /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20271D104A4B00000D76 /* UIImage+Decompression.swift */; };
+		CD9A202A1D104A5400000D76 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20291D104A5400000D76 /* RoundedCornersView.swift */; };
+		CD9A202E1D104B4000000D76 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A202D1D104B4000000D76 /* FourthViewController.swift */; };
+		CD9A20301D104B6400000D76 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A202F1D104B6400000D76 /* PinterestLayout.swift */; };
+		CD9A20321D104B7500000D76 /* PhotoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20311D104B7500000D76 /* PhotoStreamViewController.swift */; };
+		CD9A20341D104BC000000D76 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20331D104BC000000D76 /* SearchTableViewController.swift */; };
+		CD9A20361D104C0A00000D76 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20351D104C0A00000D76 /* FifthViewController.swift */; };
+		CD9A20381D104CAE00000D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A20371D104CAE00000D76 /* ViewController.swift */; };
+		CD9A203A1D104E8B00000D76 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9A20391D104E8B00000D76 /* Photos.xcassets */; };
+		CD9A203E1D104F4B00000D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A203D1D104F4B00000D76 /* Main.storyboard */; };
+		CD9A20401D104F9000000D76 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A203F1D104F9000000D76 /* ThirdViewController.swift */; };
+		CD9E77451D199B0300D0E039 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E77441D199B0300D0E039 /* NewsFeedViewController.swift */; };
+		CD9E77471D19A1CC00D0E039 /* AppDelNewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E77461D19A1CC00D0E039 /* AppDelNewsFeed.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88C9F18106625BC8ADC514E9 /* Pods_Aminolat101.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aminolat101.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C57E7B9BBCE43F9B60B3D5C /* Pods-Aminolat101.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aminolat101.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aminolat101/Pods-Aminolat101.debug.xcconfig"; sourceTree = "<group>"; };
+		C1A47FE38E845DE92128CB13 /* Pods-Aminolat101.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aminolat101.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aminolat101/Pods-Aminolat101.release.xcconfig"; sourceTree = "<group>"; };
+		CD0655051D101D1800691A9B /* Aminolat101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aminolat101.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0655081D101D1800691A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD06550A1D101D1800691A9B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CD06550C1D101D1800691A9B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CD0655111D101D1800691A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD0655141D101D1800691A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD0655161D101D1800691A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD269D661D141C5E008B9759 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CD269D681D141C70008B9759 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CD269D6A1D141C80008B9759 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CD427E731D1721650015E303 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CD427E7B1D18490D0015E303 /* FacebookSDKs-iOS-4.13.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = "FacebookSDKs-iOS-4.13.1"; path = "../../Documents/FacebookSDKs-iOS-4.13.1"; sourceTree = "<group>"; };
+		CD427E7D1D18682B0015E303 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CD543EBD1D16F2C600561FD7 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		CD7A4E921D109FC1001E81C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD97A2CF1D11B248001EFF88 /* Aminolat101-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aminolat101-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD97A2D01D11B249001EFF88 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD97A2D21D11B272001EFF88 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD97A2D41D11B2D1001EFF88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD97A2D51D11B30C001EFF88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD9A201F1D10432C00000D76 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
+		CD9A20211D10444A00000D76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD9A20231D104A0400000D76 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		CD9A20251D104A1900000D76 /* AnnotatedPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedPhotoCell.swift; sourceTree = "<group>"; };
+		CD9A20271D104A4B00000D76 /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
+		CD9A20291D104A5400000D76 /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
+		CD9A202D1D104B4000000D76 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		CD9A202F1D104B6400000D76 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		CD9A20311D104B7500000D76 /* PhotoStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStreamViewController.swift; sourceTree = "<group>"; };
+		CD9A20331D104BC000000D76 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		CD9A20351D104C0A00000D76 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		CD9A20371D104CAE00000D76 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD9A20391D104E8B00000D76 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
+		CD9A203D1D104F4B00000D76 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD9A203F1D104F9000000D76 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		CD9E77441D199B0300D0E039 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		CD9E77461D19A1CC00D0E039 /* AppDelNewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelNewsFeed.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD0655021D101D1800691A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD269D6B1D141C80008B9759 /* FBSDKShareKit.framework in Frameworks */,
+				6712A06BDBC66B75606DB03B /* Pods_Aminolat101.framework in Frameworks */,
+				CD427E7E1D18682B0015E303 /* FBSDKLoginKit.framework in Frameworks */,
+				CD269D671D141C5E008B9759 /* FBSDKCoreKit.framework in Frameworks */,
+				CD269D691D141C70008B9759 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5738CED1B29BD442176053E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C57E7B9BBCE43F9B60B3D5C /* Pods-Aminolat101.debug.xcconfig */,
+				C1A47FE38E845DE92128CB13 /* Pods-Aminolat101.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB6B8B0FC71CF3D92FD6C53D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD269D681D141C70008B9759 /* FBSDKLoginKit.framework */,
+				CD427E7B1D18490D0015E303 /* FacebookSDKs-iOS-4.13.1 */,
+				88C9F18106625BC8ADC514E9 /* Pods_Aminolat101.framework */,
+				CD269D6A1D141C80008B9759 /* FBSDKShareKit.framework */,
+				CD269D661D141C5E008B9759 /* FBSDKCoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD0654FC1D101D1800691A9B = {
+			isa = PBXGroup;
+			children = (
+				CD0655071D101D1800691A9B /* Aminolat101 */,
+				CD0655061D101D1800691A9B /* Products */,
+				5738CED1B29BD442176053E8 /* Pods */,
+				CB6B8B0FC71CF3D92FD6C53D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD0655061D101D1800691A9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD0655051D101D1800691A9B /* Aminolat101.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD0655071D101D1800691A9B /* Aminolat101 */ = {
+			isa = PBXGroup;
+			children = (
+				CD7A4E921D109FC1001E81C2 /* GoogleService-Info.plist */,
+				CD0655081D101D1800691A9B /* AppDelegate.swift */,
+				CD9E77461D19A1CC00D0E039 /* AppDelNewsFeed.swift */,
+				CD427E731D1721650015E303 /* SignUpViewController.swift */,
+				CD543EBD1D16F2C600561FD7 /* LogInViewController.swift */,
+				CD06550A1D101D1800691A9B /* FirstViewController.swift */,
+				CD06550C1D101D1800691A9B /* SecondViewController.swift */,
+				CD9E77441D199B0300D0E039 /* NewsFeedViewController.swift */,
+				CD9A203D1D104F4B00000D76 /* Main.storyboard */,
+				CD0655111D101D1800691A9B /* Assets.xcassets */,
+				CD9A20211D10444A00000D76 /* Images.xcassets */,
+				CD9A20391D104E8B00000D76 /* Photos.xcassets */,
+				CD427E7D1D18682B0015E303 /* FBSDKLoginKit.framework */,
+				CD0655131D101D1800691A9B /* LaunchScreen.storyboard */,
+				CD0655161D101D1800691A9B /* Info.plist */,
+				CD9A201F1D10432C00000D76 /* Photos.plist */,
+				CD97A2D01D11B249001EFF88 /* AppDelegate.m */,
+				CD97A2D21D11B272001EFF88 /* ViewController.m */,
+				CD97A2D51D11B30C001EFF88 /* AppDelegate.h */,
+				CD97A2D41D11B2D1001EFF88 /* ViewController.h */,
+				CD9A20231D104A0400000D76 /* Photo.swift */,
+				CD9A20251D104A1900000D76 /* AnnotatedPhotoCell.swift */,
+				CD9A20271D104A4B00000D76 /* UIImage+Decompression.swift */,
+				CD9A202F1D104B6400000D76 /* PinterestLayout.swift */,
+				CD9A20291D104A5400000D76 /* RoundedCornersView.swift */,
+				CD9A203F1D104F9000000D76 /* ThirdViewController.swift */,
+				CD9A202D1D104B4000000D76 /* FourthViewController.swift */,
+				CD9A20351D104C0A00000D76 /* FifthViewController.swift */,
+				CD9A20311D104B7500000D76 /* PhotoStreamViewController.swift */,
+				CD9A20331D104BC000000D76 /* SearchTableViewController.swift */,
+				CD9A20371D104CAE00000D76 /* ViewController.swift */,
+				CD97A2CF1D11B248001EFF88 /* Aminolat101-Bridging-Header.h */,
+			);
+			path = Aminolat101;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD0655041D101D1800691A9B /* Aminolat101 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0655191D101D1800691A9B /* Build configuration list for PBXNativeTarget "Aminolat101" */;
+			buildPhases = (
+				8301AFD4842ECCF7255870B2 /* [CP] Check Pods Manifest.lock */,
+				CD0655011D101D1800691A9B /* Sources */,
+				CD0655021D101D1800691A9B /* Frameworks */,
+				CD0655031D101D1800691A9B /* Resources */,
+				65F557339C20B99F4BB37C59 /* [CP] Embed Pods Frameworks */,
+				2903CAA92791462208998701 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aminolat101;
+			productName = Aminolat101;
+			productReference = CD0655051D101D1800691A9B /* Aminolat101.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD0654FD1D101D1800691A9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Mikkel Jensen";
+				TargetAttributes = {
+					CD0655041D101D1800691A9B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CD0655001D101D1800691A9B /* Build configuration list for PBXProject "Aminolat101" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD0654FC1D101D1800691A9B;
+			productRefGroup = CD0655061D101D1800691A9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD0655041D101D1800691A9B /* Aminolat101 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD0655031D101D1800691A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9A203E1D104F4B00000D76 /* Main.storyboard in Resources */,
+				CD427E7C1D18490D0015E303 /* FacebookSDKs-iOS-4.13.1 in Resources */,
+				CD7A4E931D109FC1001E81C2 /* GoogleService-Info.plist in Resources */,
+				CD0655151D101D1800691A9B /* LaunchScreen.storyboard in Resources */,
+				CD9A20221D10444A00000D76 /* Images.xcassets in Resources */,
+				CD0655121D101D1800691A9B /* Assets.xcassets in Resources */,
+				CD9A203A1D104E8B00000D76 /* Photos.xcassets in Resources */,
+				CD9A20201D10432C00000D76 /* Photos.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2903CAA92791462208998701 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aminolat101/Pods-Aminolat101-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F557339C20B99F4BB37C59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aminolat101/Pods-Aminolat101-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8301AFD4842ECCF7255870B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD0655011D101D1800691A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9A20361D104C0A00000D76 /* FifthViewController.swift in Sources */,
+				CD9A20241D104A0400000D76 /* Photo.swift in Sources */,
+				CD9A20281D104A4B00000D76 /* UIImage+Decompression.swift in Sources */,
+				CD9E77451D199B0300D0E039 /* NewsFeedViewController.swift in Sources */,
+				CD06550D1D101D1800691A9B /* SecondViewController.swift in Sources */,
+				CD0655091D101D1800691A9B /* AppDelegate.swift in Sources */,
+				CD9A202E1D104B4000000D76 /* FourthViewController.swift in Sources */,
+				CD427E741D1721650015E303 /* SignUpViewController.swift in Sources */,
+				CD9A202A1D104A5400000D76 /* RoundedCornersView.swift in Sources */,
+				CD9A20301D104B6400000D76 /* PinterestLayout.swift in Sources */,
+				CD9E77471D19A1CC00D0E039 /* AppDelNewsFeed.swift in Sources */,
+				CD9A20381D104CAE00000D76 /* ViewController.swift in Sources */,
+				CD9A20321D104B7500000D76 /* PhotoStreamViewController.swift in Sources */,
+				CD97A2D31D11B272001EFF88 /* ViewController.m in Sources */,
+				CD9A20401D104F9000000D76 /* ThirdViewController.swift in Sources */,
+				CD543EBE1D16F2C600561FD7 /* LogInViewController.swift in Sources */,
+				CD9A20341D104BC000000D76 /* SearchTableViewController.swift in Sources */,
+				CD06550B1D101D1800691A9B /* FirstViewController.swift in Sources */,
+				CD9A20261D104A1900000D76 /* AnnotatedPhotoCell.swift in Sources */,
+				CD97A2D11D11B249001EFF88 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD0655131D101D1800691A9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0655141D101D1800691A9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD0655171D101D1800691A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD0655181D101D1800691A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD06551A1D101D1800691A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C57E7B9BBCE43F9B60B3D5C /* Pods-Aminolat101.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Aminolat101",
+					"$(PROJECT_DIR)",
+					"/Users/mikkeljensen/Documents/FacebookSDKs-iOS-4.13.1",
+				);
+				INFOPLIST_FILE = Aminolat101/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aminolat.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aminolat101/Aminolat101-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD06551B1D101D1800691A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1A47FE38E845DE92128CB13 /* Pods-Aminolat101.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Aminolat101",
+					"$(PROJECT_DIR)",
+					"/Users/mikkeljensen/Documents/FacebookSDKs-iOS-4.13.1",
+				);
+				INFOPLIST_FILE = Aminolat101/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aminolat.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aminolat101/Aminolat101-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD0655001D101D1800691A9B /* Build configuration list for PBXProject "Aminolat101" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0655171D101D1800691A9B /* Debug */,
+				CD0655181D101D1800691A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0655191D101D1800691A9B /* Build configuration list for PBXNativeTarget "Aminolat101" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD06551A1D101D1800691A9B /* Debug */,
+				CD06551B1D101D1800691A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD0654FD1D101D1800691A9B /* Project object */;
+}
